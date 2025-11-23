@@ -762,3 +762,18 @@ body {
   transform: none !important;
   box-shadow: none !important;
 }
+/* Скрываем WhatsApp на мобильных устройствах */
+@media (max-width: 768px) {
+  .sticky-actions .wa-btn {
+    display: none;
+  }
+  
+  /* Опционально: регулируем отступы между оставшимися кнопками */
+  .sticky-actions {
+    gap: 8px;
+  }
+  
+  .sticky-actions a {
+    min-width: 140px; /* Чуть увеличим кнопки для лучшего нажатия */
+  }
+}
